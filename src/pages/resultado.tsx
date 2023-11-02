@@ -4,9 +4,9 @@ import Botao from '../components/Botao'
 import { useRouter } from 'next/router'
 
 export default function Resultado() {
-    const router = useRouter()
-
-    const total = +router.query.total
+    const router: any = useRouter()
+ 
+    const total =+router.query.total
     const certas = +router.query.certas
     const percentual = Math.round((certas / total) * 100)
 
